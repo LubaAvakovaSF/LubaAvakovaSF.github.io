@@ -31,9 +31,12 @@
       background: rgba(11,18,32,.72);
       border-bottom:1px solid var(--border);
     }
-    .navin{max-width:980px; margin:0 auto; padding:12px 16px; display:flex; gap:14px; align-items:center; justify-content:space-between}
+    .navin{
+      max-width:980px; margin:0 auto; padding:12px 16px;
+      display:flex; gap:14px; align-items:center; justify-content:space-between;
+    }
     .brand{font-weight:700; letter-spacing:.2px}
-    .links{display:flex; gap:14px; flex-wrap:wrap; align-items:center}
+    .links{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
     .pill{
       padding:10px 12px;
       border:1px solid var(--border);
@@ -52,32 +55,30 @@
       font-size:14px;
     }
     .btn:hover{background: rgba(122,167,255,.20)}
-    header{padding:64px 0 26px}
-    h1{font-size:52px; line-height:1.05; margin:0 0 10px}
-    .sub{color:var(--muted); font-size:18px; line-height:1.6; max-width:70ch}
-    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:18px}
-    .grid{display:grid; grid-template-columns:1fr; gap:14px}
-    @media (min-width: 840px){ .grid{grid-template-columns: 1fr 1fr} }
+    header{padding:48px 0 18px}
+    h1{font-size:46px; line-height:1.05; margin:0 0 10px}
+    .sub{color:var(--muted); font-size:18px; line-height:1.6; max-width:70ch; margin:0}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
     .card{
       border:1px solid var(--border);
       border-radius:18px;
       background: var(--card);
       padding:18px;
     }
-    .sectionTitle{margin:26px 0 10px; font-size:18px; letter-spacing:.3px}
+    .sectionTitle{margin:22px 0 10px; font-size:18px; letter-spacing:.3px}
     .muted{color:var(--muted)}
-    .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
-    .tag{
-      font-size:12px;
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      color:var(--muted);
-    }
-    .row{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
     .small{font-size:13px}
-    footer{margin-top:40px; color: rgba(232,238,252,.55); font-size:13px}
+    .row{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
+    .avatar{
+      width:170px; height:170px; object-fit:cover; border-radius:50%;
+      border:3px solid rgba(122,167,255,.6);
+      box-shadow:0 10px 30px rgba(0,0,0,.4);
+    }
+    ul.projects{margin:10px 0 0; padding-left:18px}
+    ul.projects li{margin:10px 0}
+    .projTitle{font-weight:700}
+    .projDesc{color:var(--muted); margin-top:4px}
+    footer{margin-top:36px; color: rgba(232,238,252,.55); font-size:13px}
   </style>
 </head>
 
@@ -88,7 +89,6 @@
       <div class="links">
         <a class="pill" href="#about">About</a>
         <a class="pill" href="#projects">Projects</a>
-        <a class="pill" href="#skills">Skills</a>
         <a class="pill" href="#contact">Contact</a>
         <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
       </div>
@@ -96,92 +96,62 @@
   </div>
 
   <div class="wrap">
-  <header style="display:flex; align-items:center; gap:40px; flex-wrap:wrap;">
-  
-  <img src="profile.jpg"
-       alt="Luba Avakova"
-       style="width:180px;
-              height:180px;
-              object-fit:cover;
-              border-radius:50%;
-              border:3px solid rgba(122,167,255,.6);
-              box-shadow:0 10px 30px rgba(0,0,0,.4);">
-
-  <div>
-    <h1>Hi, I’m Luba Avakova</h1>
-    <p class="sub">
-      QA Engineer + Communications major. I like building reliable test automation,
-      catching edge cases, and making teams ship with confidence.
-    </p>
-
-    <div class="cta">
-      <a class="btn" href="#projects">View Projects</a>
-      <a class="pill" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-      <a class="pill" href="https://github.com/LubaAvakovaSF" target="_blank">GitHub</a>
-    </div>
-  </div>
-
-</header>
-
-    <section id="about" class="card">
-      <div class="sectionTitle">About</div>
-      <p class="muted">
-        I’m a QA Engineer with experience in fast-moving teams. I’m comfortable with manual + automated testing, writing clear bug reports,
-        and working closely with devs/PMs to unblock releases.
-      </p>
-      <div class="tags">
-        <span class="tag">QA / SDET</span>
-        <span class="tag">Automation</span>
-        <span class="tag">Web & Mobile</span>
-        <span class="tag">Accessibility</span>
-        <span class="tag">Stakeholder communication</span>
+    <header class="card">
+      <div class="row" style="gap:18px; align-items:center;">
+        <img class="avatar" src="profile.jpg" alt="Luba Avakova" />
+        <div style="min-width:260px; flex:1;">
+          <h1>Hi, I’m Luba 👋</h1>
+          <p class="sub">QA Engineer + Communications major. I build reliable test automation, catch edge cases, and help teams ship with confidence.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="pill" href="resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+            <a class="pill" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="pill" href="https://github.com/LubaAvakovaSF" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
       </div>
+    </header>
+
+    <section id="about" class="card" style="margin-top:14px">
+      <div class="sectionTitle">About Me</div>
+      <p class="muted" style="margin:0">
+        I’m a QA Engineer with experience in fast-moving teams. I’m comfortable with manual + automated testing,
+        writing clear bug reports, and working closely with devs/PMs to unblock releases.
+      </p>
     </section>
 
-    <div id="projects" class="sectionTitle">Projects</div>
-    <div class="grid">
-      <div class="card">
-        <strong>Automation Framework (Playwright)</strong>
-        <p class="muted small">Example project: end-to-end tests, stable selectors, CI-friendly runs, and readable reporting.</p>
-        <div class="row">
-          <a class="pill" href="#" target="_blank" rel="noreferrer">Live Demo</a>
-          <a class="pill" href="#" target="_blank" rel="noreferrer">GitHub Repo</a>
-        </div>
-        <div class="tags">
-          <span class="tag">Playwright</span><span class="tag">TypeScript</span><span class="tag">CI</span>
-        </div>
-      </div>
+    <section id="projects" class="card" style="margin-top:14px">
+      <div class="sectionTitle">Projects</div>
 
-      <div class="card">
-        <strong>Bug Triage + Release Notes</strong>
-        <p class="muted small">A lightweight process for organizing issues, prioritizing fixes, and communicating what shipped.</p>
-        <div class="row">
-          <a class="pill" href="#" target="_blank" rel="noreferrer">Case Study</a>
-        </div>
-        <div class="tags">
-          <span class="tag">Jira</span><span class="tag">Communication</span><span class="tag">Process</span>
-        </div>
-      </div>
-    </div>
+      <ul class="projects">
+        <li>
+          <div class="projTitle"><a class="pill" href="https://github.com/YOUR-REPO-LINK" target="_blank" rel="noreferrer">Playwright Automation Framework</a></div>
+          <div class="projDesc">End-to-end UI tests with stable locators, readable structure, and CI-friendly runs.</div>
+        </li>
 
-    <section id="skills" class="card" style="margin-top:14px">
-      <div class="sectionTitle">Skills</div>
-      <p class="muted small">
-        <strong>Testing:</strong> test plans, regression, exploratory, accessibility (a11y), API basics<br/>
-        <strong>Automation:</strong> Playwright / Selenium (edit these to match you)<br/>
-        <strong>Tools:</strong> GitHub, Jira, Postman, CI/CD basics<br/>
-        <strong>Strength:</strong> clear communication + stakeholder alignment
-      </p>
+        <li>
+          <div class="projTitle"><a class="pill" href="https://github.com/YOUR-REPO-LINK-2" target="_blank" rel="noreferrer">API Testing (Postman)</a></div>
+          <div class="projDesc">Collection + basic automation, status/assertions, and clear documentation.</div>
+        </li>
+
+        <li>
+          <div class="projTitle"><a class="pill" href="#" target="_blank" rel="noreferrer">Case Study: Bug Triage + Release Notes</a></div>
+          <div class="projDesc">A lightweight workflow for prioritizing issues and communicating what shipped.</div>
+        </li>
+      </ul>
+
+      <p class="muted small" style="margin-top:12px">Tip: replace the project links with your real repos (or remove items you don’t want yet).</p>
     </section>
 
     <section id="contact" class="card" style="margin-top:14px">
       <div class="sectionTitle">Contact</div>
-      <p class="muted">Want to chat? Email me and I’ll reply.</p>
+      <p class="muted" style="margin:0 0 10px">Want to chat? Email me and I’ll reply.</p>
+
       <div class="row">
-        <a class="btn" href="mailto:your.email@gmail.com">Email Me</a>
-        <a class="pill" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn" href="mailto:YOUR.EMAIL@gmail.com">Email Me</a>
+        <a class="pill" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="pill" href="https://github.com/LubaAvakovaSF" target="_blank" rel="noreferrer">GitHub</a>
       </div>
-      <p class="muted small" style="margin-top:10px">Tip: change the email + LinkedIn links to yours.</p>
     </section>
 
     <footer>
