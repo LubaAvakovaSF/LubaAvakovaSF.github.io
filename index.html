@@ -78,6 +78,14 @@
       color: var(--muted);
     }
     .about-intro { margin-bottom: 12px; }
+    .about-with-photo { overflow: auto; }
+    .profile-photo {
+      float: left;
+      width: 130px;
+      height: auto;
+      margin-right: 16px;
+      border-radius: 6px;
+    }
     .project-item {
       margin-bottom: 20px;
     }
@@ -113,12 +121,15 @@
   <div class="wrap">
     <section id="about">
       <h2>About Me</h2>
-      <p class="about-intro">
-        QA Engineer with experience in fast-moving teams. I build reliable test automation, catch edge cases, and help teams ship with confidence. I’m comfortable with manual + automated testing, writing clear bug reports, and working closely with devs/PMs to unblock releases.
-      </p>
-      <p>
-        <a href="resume.pdf" target="_blank" rel="noreferrer">Résumé ⬇️</a>
-      </p>
+      <div class="about-with-photo">
+        <img class="profile-photo" src="profile.jpg" alt="Luba Avakova" />
+        <p class="about-intro">
+          QA Engineer with experience in fast-moving teams. I build reliable test automation, catch edge cases, and help teams ship with confidence. I’m comfortable with manual + automated testing, writing clear bug reports, and working closely with devs/PMs to unblock releases.
+        </p>
+        <p>
+          <a href="resume.pdf" target="_blank" rel="noreferrer">Résumé ⬇️</a>
+        </p>
+      </div>
     </section>
 
     <section id="projects">
