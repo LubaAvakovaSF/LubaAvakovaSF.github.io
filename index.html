@@ -6,7 +6,8 @@
   <title>Luba Avakova | Portfolio</title>
   <style>
     :root {
-      --bg: #fff;
+      --header-bg: #1e3a5f;
+      --bg: #f6f8fa;
       --border: rgba(0,0,0,.12);
       --text: #1a1a1a;
       --muted: #555;
@@ -23,6 +24,24 @@
     }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .site-header {
+      background: var(--header-bg);
+      color: #fff;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .site-header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    .site-header .subtitle {
+      margin: 8px 0 0;
+      font-size: 1rem;
+      color: rgba(255,255,255,.85);
+    }
     .wrap {
       max-width: 720px;
       margin: 0 auto;
@@ -77,12 +96,12 @@
 </head>
 
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Luba Avakova</h1>
-      <p class="subtitle">QA Engineer + Communications</p>
-    </header>
+  <header class="site-header">
+    <h1>Luba Avakova</h1>
+    <p class="subtitle">QA Engineer + Communications</p>
+  </header>
 
+  <div class="wrap">
     <section id="about">
       <h2>About Me</h2>
       <p class="about-intro">
